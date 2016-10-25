@@ -70,6 +70,7 @@ function bookcpt_frontend_form_register() {
 		'id'        => $prefix . 'related',
 		'type'      => 'post_search_text',
 		'post_type' => 'book',
+		'on_front'  => false,
 	) );
 
 	$cmb->add_field( array(
