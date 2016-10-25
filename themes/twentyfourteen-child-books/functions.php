@@ -22,20 +22,22 @@ twentyfourteenbooks_includes();
  *
  * @return string         Maybe-modified page title
  */
-function twentyfourteenbooks_replace_homepage_title_with_slogan( $title ) {
-	// If we're not on the homepage, just pass the title back
-	if ( ! is_front_page() ) {
+function twentyfourteenbooks_replace_homepage_title_with_slogan( $title, $post_id = 0 ) {
+	$post_id = $post_id ? $post_id : get_the_ID();
+
+	// If we're not on the homepage, or not the page post-type, just pass the title back
+	if ( ! is_front_page() || 'page' !== get_post_type( $post_id ) ) {
 		return $title;
 	}
 
 	// If we find a slogan on the homepage, use that instead.
-	if ( $slogan = get_post_meta( get_the_ID(), '_twentyfourteenbooks_front_slogan', 1 ) ) {
+	if ( $slogan = get_post_meta( $post_id, '_twentyfourteenbooks_front_slogan', 1 ) ) {
 		return $slogan;
 	}
 
 	return $title;
 }
-add_filter( 'the_title', 'twentyfourteenbooks_replace_homepage_title_with_slogan' );
+add_filter( 'the_title', 'twentyfourteenbooks_replace_homepage_title_with_slogan', 10, 9 );
 
 /**
  * Display frontpage random splash image
