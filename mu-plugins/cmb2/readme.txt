@@ -4,7 +4,7 @@ Donate link:       http://webdevstudios.com
 Tags:              metaboxes, forms, fields, options, settings
 Requires at least: 3.8.0
 Tested up to:      4.4.2
-Stable tag:        2.2.2.1
+Stable tag:        2.2.3
 License:           GPLv2 or later
 License URI:       http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -14,9 +14,14 @@ CMB2 is a metabox, custom fields, and forms library for WordPress that will blow
 
 CMB2 is a developer's toolkit for building metaboxes, custom fields, and forms for WordPress that will blow your mind.
 
-CMB2 is a complete rewrite of [Custom Metaboxes and Fields for WordPress](https://github.com/WebDevStudios/Custom-Metaboxes-and-Fields-for-WordPress). To get started, please follow the examples in the included `example-functions.php` file and have a look at the [basic usage instructions](https://github.com/WebDevStudios/CMB2/wiki/Basic-Usage).
+CMB2 is a complete rewrite of Custom Metaboxes and Fields for WordPress. To get started, please follow the examples in the included `example-functions.php` file and have a look at the [basic usage instructions](https://github.com/WebDevStudios/CMB2/wiki/Basic-Usage).
 
 You can see a list of available field types [here](https://github.com/WebDevStudios/CMB2/wiki/Field-Types#types).
+
+### Contribution
+Development occurs on Github, and all contributions welcome. Please read the [CONTRIBUTING](https://github.com/WebDevStudios/CMB2/blob/master/CONTRIBUTING.md) doc for more details.
+
+A complete list of all our awesome contributors found here: [github.com/WebDevStudios/CMB2/graphs/contributors](https://github.com/WebDevStudios/CMB2/graphs/contributors)
 
 ### Features:
 
@@ -55,6 +60,12 @@ You can see a list of available field types [here](https://github.com/WebDevStud
 * [WDS CMB2 Date Range Field](https://github.com/WebDevStudios/CMB2-Date-Range-Field) from [dustyf](https://github.com/dustyf) of [WebDevStudios](https://github.com/WebDevStudios): Adds a date range field.
 * [CMB2 Remote Image Select](https://github.com/WebDevStudios/CMB2-Remote-Image-Select-Field) from [JayWood](https://github.com/JayWood) of [WebDevStudios](https://github.com/WebDevStudios): Allows users to enter a URL in a text field and select a single image for use in post meta. Similar to Facebook's featured image selector.
 * [CMB Field Type: Sorter](https://wordpress.org/plugins/cmb-field-type-sorter/): This plugin gives you two CMB field types based on the Sorter script.
+* [CMB Field Type: Tags](https://github.com/florianbeck/cmb2-field-type-tags): WordPress-Tags-like field type for CMB2. _note: this does not set the post tags, but simply provides a unique text input_
+* [CMB Field Type: Link Picker](https://wordpress.org/plugins/link-picker-for-cmb2/): Using the Link Picker for CMB2 control, you can choose a link from your WordPress site, or manually enter a link. You can also identify if the link should open in a new window, or not.
+* [CMB Field Type: MultidatesPicker](https://github.com/origgami/cmb2-multidates-picker): Creates a CMB2 field type that enables a multiple date calendar. It uses a plugin called [MultiDatesPicker v1.6.3 for jQuery UI](http://multidatespickr.sourceforge.net/).
+* [CMB Field Type: CMB2-radio-image](https://github.com/satwinderrathore/CMB2-radio-image): Image as radio buttons.
+* [CMB2 Term Select](https://github.com/florianbeck/cmb2-field-type-tags): Special CMB2 Field that allows users to define an autocomplete text field for terms. _Note: this will set the taxonomy terms, but has the option (`'apply_term' => false`) to disable and save the term ids as data instead (like for options pages, etc)._
+* [CMB2 Related Links](https://github.com/jtsternberg/CMB2-Related-Links): Allows users to add a related links via a repeating field group. Field inputs are powered by the [CMB2 Field Type: CMB2 Post Search field](https://github.com/WebDevStudios/CMB2-Post-Search-field) documented above, and so each link can be populated with existing WordPress content by clicking on the search button. _Note: this is not a standard field type, but instead a function you use in combination with CMB2::add_field()._
 
 ##### Other Helpful Resources
 * [WordPress Shortcode Button](https://github.com/jtsternberg/Shortcode_Button): Uses CMB2 fields to generate fields for shortcode input modals.
@@ -64,12 +75,8 @@ You can see a list of available field types [here](https://github.com/WebDevStud
 * [CMB2-grid](https://github.com/origgami/CMB2-grid) from [origgami](https://github.com/origgami/): A grid system for WordPress CMB2 library that allows the creation of columns for a better layout in the admin.
 * [CMB2 Metatabs Options](https://github.com/rogerlos/cmb2-metatabs-options) from [rogerlos](https://github.com/rogerlos/): CMO makes it easy to create options pages with multiple metaboxes--and optional WordPress admin tabs.
 * [CMB2 Conditionals](https://github.com/jcchavezs/cmb2-conditionals) from [jcchavezs](https://github.com/jcchavezs/): Allows developers to relate fields so the display of one is conditional on the value of another.
-* [CMB2 Metabox Code Generator](http://hasinhayder.github.io/cmb2-metabox-generator/) from [hasinhayder](https://github.com/hasinhayder/): Use this code generator to generate fully functional CMB2 metaboxes by visually adding fields in the designer.
-
-### Contribution
-All contributions welcome. If you would like to submit a pull request, please check out the [trunk branch](https://github.com/WebDevStudios/CMB2/tree/trunk) and pull request against it. Please read the [CONTRIBUTING](https://github.com/WebDevStudios/CMB2/blob/master/CONTRIBUTING.md) doc for more details.
-
-A complete list of all our awesome contributors found here: [github.com/WebDevStudios/CMB2/graphs/contributors](https://github.com/WebDevStudios/CMB2/graphs/contributors)
+* [CMB2 Metabox Code Generator](http://willthemoor.github.io/cmb2-metabox-generator/) from [willthemoor](https://github.com/willthemoor/): Skip the boring bits. Use this generator to create fully functional CMB2 metaboxes easily. Now with bulk entry!
+* [Caldera Metaplate](https://wordpress.org/plugins/caldera-metaplate/) by [CalderaWP](https://calderawp.com/): Not specific to CMB2, but allows creating templates for outputting your custom fields.
 
 ### Links
 * [Project Homepage](http://cmb2.io)
@@ -78,49 +85,10 @@ A complete list of all our awesome contributors found here: [github.com/WebDevSt
 
 [Pluginize](https://pluginize.com/?utm_source=CMB2&utm_medium=text&utm_campaign=wporg) was launched in 2016 by [WebDevStudios](https://webdevstudios.com/) to promote, support, and house all of their [WordPress products](https://pluginize.com/shop/?utm_source=CMB2&utm_medium=text&utm_campaign=wporg). Pluginize is not only creating new products for WordPress all the time, like [CPTUI Extended](https://pluginize.com/product/custom-post-type-ui-extended/?utm_source=cptui&utm_medium=text&utm_campaign=wporg), but also provides [ongoing support and development for WordPress community favorites like CPTUI](https://wordpress.org/plugins/custom-post-type-ui/) and more.
 
-### Most Recent Changes
-
-#### 2.2.2.1 - 2016-06-27
-
-##### Bug Fixes
-
-* Fix issue that kept CMB2 stylesheet from being enqueued when using the [options-page snippets](https://github.com/WebDevStudios/CMB2-Snippet-Library/tree/master/options-and-settings-pages).
-* Fix issue which caused the CMB2 column display styles to be enqueued in the wrong pages. Now only enqueues on admin pages with columns.
-
-#### 2.2.2 - 2016-06-27
-
-##### Enhancements
-
-* You can now set admin post-listing columns with an extra field parameter, `'column' => true,`. If you want to dictate what position the column is, use `'column' => array( 'position' => 2 ),`. If you want to dictate the column title (instead of using the field `'name'` value), use `'column' => array( 'name' => 'My Column' ),`. If you need to specify the column display callback, set the `'display_cb'` parameter to [a callback function](https://github.com/WebDevStudios/CMB2/wiki/Field-Parameters#render_row_cb). Columns work for post (all post-types), comment, user, and term object types.
-* Updated Datepicker styles using JJJ's "jQuery UI Datepicker CSS for WordPress", so props Props [@stuttter](https://github.com/stuttter), [@johnjamesjacoby](https://github.com/johnjamesjacoby). Also cleaned up the timepicker styles (specifically the buttons) to more closely align with the datepicker and WordPress styles.
-* CMB2 is now a lot more intelligent about where it is located in your installation. This update should solve almost all of the reasons to use the `'cmb2_meta_box_url'` filter (thought it will continue to work as expected). ([#27](https://github.com/WebDevStudios/CMB2/issues/27), [#118](https://github.com/WebDevStudios/CMB2/issues/118), [#432](https://github.com/WebDevStudios/CMB2/issues/432), [related wiki item](https://github.com/WebDevStudios/CMB2/wiki/Troubleshooting#cmb2-urls-issues))
-* Implement CMB2_Ajax as a singleton. Props [jrfnl](https://github.com/jrfnl) ([#602](https://github.com/WebDevStudios/CMB2/pull/602)).
-* Add `classes` and `classes_cb` CMB2 box params which allows you to add additional classes to the cmb-wrap. The `classes` parameter can take a string or array, and the `classes_cb` takes a callback which returns a string or array. The callback will receive `$cmb` as an argument. These classes are also passed through a new filter, `'cmb2_wrap_classes'`, which receives the array of classes as the first argument, and the CMB2 object as the second. Reported/requested in [#364](https://github.com/WebDevStudios/CMB2/issues/364#issuecomment-213223692).
-* Make the `'title'` field type accept extra arguments. Props [@vladolaru](https://github.com/vladolaru), [@pixelgrade](https://github.com/pixelgrade) ([#656](https://github.com/WebDevStudios/CMB2/pull/656)).
-* Updated `cmb2_get_oembed()` function to NOT return the "remove" link, as it's intended for outputting the oembed only. **This is a backwards-compatibility concern.** If you were depending on the "remove" link, use `cmb2_ajax()->get_oembed( $args )` instead.
-* New function, `cmb2_do_oembed()`', which is hooked to `'cmb2_do_oembed'`, so you can use `do_action( 'cmb2_do_oembed', $args )` in your themes without `function_exists()` checks.
-* New method, `CMB2:set_prop( $property, $value )`, for setting a CMB2 metabox object property.
-* The `CMB2_Field` object instances will now have a `cmb_id` property and a `get_cmb` method to enable access to the field's `CMB2` parent object's instance, in places like field callbacks and filters (e.g. `$cmb = $field->get_cmb();`).
-* Add a `data-fieldtype` attribute to the field rows for simpler identification in Javascript.
-* Moved each type in `CMB2_Types` to it's own class so that each field type can handle it's own field display, and added the infrastructure to maintainn back-compatibility.
-* New `CMB2_Utils` methods, `notempty()` and `filter_empty()`, both of which consider `null`, `''` and `false` as empty, but allow `0` (for saving `0` as a field value).
-* New `CMB2_Utils` public methods, `get_url_from_dir()`, `get_file_ext()`, `get_file_name_from_path()`, and `wp_at_least()`.
-* Add a `cmb_pre_init` Javascript event to allow overriding CMB2 defaults via JS.
-
-##### Bug Fixes
-* Fix issue with 'default' callback not being applied in all instances. Introduced new `CMB2_Field::get_default()` method, and `'default_cb'` field parameter. Using the `'default'` field parameter with a callback will be deprecated in the next few releases. ([#572](https://github.com/WebDevStudios/CMB2/issues/572)).
-* Be sure to call `CMB2_Field::row_classes()` for group field rows. Also, update CSS to use the "cmb-type-group" classname instead of "cmb-repeat-group-wrap".
-* Introduce new `'text'` and `'text_cb'` field parameters for overriding CMB2 text strings instead of using the `'options'` array. ([#630](https://github.com/WebDevStudios/CMB2/pull/630))
-* Fix bug where the value of '0' could not be saved in group fields.
-* Fix bug where a serialized empty array value in the database for a repeatable field would output as "Array".
-* Allow for optional/empty money field. Props [@jrfnl](https://github.com/jrfnl) ([#577](https://github.com/WebDevStudios/CMB2/pull/577)).
-* The `CMB2::$updated` parameter (which contains field ids for all fields updated during a save) now also correctly adds group field ids to the array.
-
-**[View complete changelog](https://github.com/WebDevStudios/CMB2/blob/master/CHANGELOG.md)**
+**[View CHANGELOG](https://github.com/WebDevStudios/CMB2/blob/master/CHANGELOG.md)**
 
 ### Known Issues
 
-* The CMB2 url (for css/js resources) does not define properly in all WAMP/XAMP (Windows) environments.
 * Metabox containing WYSIWYG editor cannot be moved or used in a repeatable way at this time (this is a TinyMCE issue).
 * Not all fields work well in a repeatable group.
 
@@ -146,6 +114,44 @@ If including the library in your plugin or theme:
 FAQ's usually end up in the [github wiki](https://github.com/WebDevStudios/CMB2/wiki).
 
 == Changelog ==
+
+### 2.2.3 - 2016-10-25
+
+#### Enhancements
+
+* CMB2 REST API! CMB2 now has WP REST API endpoints for displaying your boxes and fields data, as well as registers rest fields in the existing post, user, term, and comment endpoints (in the cmb2 namespace). Enabling the REST API for your boxes/fields is opt-in, meaning it will not be automatically enabled. For more info, [check out the wiki](https://github.com/WebDevStudios/CMB2/wiki/REST-API).
+* Small string improvement, move a period inside the translatable string. Props [@pedro-mendonca](https://github.com/pedro-mendonca) ([#672](https://github.com/WebDevStudios/CMB2/pull/672)).
+* Introduce the `'save_field'` boolean field parameter for disabling the saving of a field. Useful if you want to display the value of another field, or use a disabled/read-only field. Props [@jamesgol](https://github.com/jamesgol) ([#674](https://github.com/WebDevStudios/CMB2/pull/674), [#346](https://github.com/WebDevStudios/CMB2/issues/346), [#500](https://github.com/WebDevStudios/CMB2/issues/500)).
+* Update docblocks for `CMB2_Field::save_field_from_data()` and `CMB2_Field::save_field()`. Props [@jamesgol](https://github.com/jamesgol) ([#675](https://github.com/WebDevStudios/CMB2/pull/675)).
+* More javascript events tied to the media modal actions (related to the `'file'` and '`file_list'` fields). `'cmb_media_modal_init'`, `'cmb_media_modal_open'`, and `'cmb_media_modal_select'`.
+* All CMB2 JS events now also get the CMB2 JS object passed in the list of arguments.
+* CMB2 JS object is now instantiated without stomping existing object, to enable extending.
+* New field parameter for taxonomy fields, `'remove_default'` which allows disabling the default taxonomy metabox. Props [@c3mdigital](https://github.com/c3mdigital) ([#593](https://github.com/WebDevStudios/CMB2/pull/593)).
+* Change `'row_classes'` to just `'classes'`, to mirror the metabox `'classes'` property. Also now accepts a `'classes_cb'` parameter for specifying a callback which returns a string or array. The callback will receive `$field_args` as the first argument, and the CMB2_Field `$field` object as the second argument. (`'row_classes'` will continue to work, but is deprecated)
+* Make wysiwyg editors work in the repeatable groups context. A standard repeatable (non-group) wysiwyg field is not supported (but will possibly be included in a future update). Props [@johnsonpaul1014](https://github.com/johnsonpaul1014) ([#26](https://github.com/WebDevStudios/CMB2/pull/26), [#99](https://github.com/WebDevStudios/CMB2/pull/99), [#260](https://github.com/WebDevStudios/CMB2/pull/260), [#264](https://github.com/WebDevStudios/CMB2/pull/264), [#356](https://github.com/WebDevStudios/CMB2/pull/356), [#431](https://github.com/WebDevStudios/CMB2/pull/431), [#462](https://github.com/WebDevStudios/CMB2/pull/462), [#657](https://github.com/WebDevStudios/CMB2/pull/657), [#693](https://github.com/WebDevStudios/CMB2/pull/693)).
+* Add an id to the heading tag in the title field. This allows linking to a particular title using the id.
+* Internationalization improvements. Props [ramiy](https://github.com/ramiy) ([#696](https://github.com/WebDevStudios/CMB2/pull/696)).
+* Ensure that saving does not happen during a switch-to-blog session, as data would be saved to the wrong object. [See more](https://wordpress.org/support/topic/bug-in-lastest-version?replies=2).
+* Add `'cmb2_group_wrap_attributes'` filter to modifying the group wrap div's attributes. Filter gets passed an array of attributes and expects the return to be an array. Props [jrfnl](https://github.com/jrfnl) ([#582](https://github.com/WebDevStudios/CMB2/pull/582)).
+* Update the unit-tests README and inline docs. Props [bobbingwide](https://github.com/bobbingwide) ([#714](https://github.com/WebDevStudios/CMB2/pull/714), [#715](https://github.com/WebDevStudios/CMB2/pull/715)).
+* Minor update to make naming-conventions consistent. Props [ramiy](https://github.com/ramiy) ([#718](https://github.com/WebDevStudios/CMB2/pull/718)).
+* Update files to be compatible with PHP7 CodeSniffer standards. Props [ryanshoover](https://github.com/ryanshoover) ([#719](https://github.com/WebDevStudios/CMB2/pull/719), [#720](https://github.com/WebDevStudios/CMB2/pull/720)).
+* Make exception message translatable. Props [ramiy](https://github.com/ramiy) ([#724](https://github.com/WebDevStudios/CMB2/pull/724)).
+* Portuguese translation provided by [@alvarogois](https://github.com/alvarogois) and [@pedro-mendonca](https://github.com/pedro-mendonca) - [#709](https://github.com/WebDevStudios/CMB2/pull/709), [#727](https://github.com/WebDevStudios/CMB2/pull/727).
+* Stop using `$wp_version` global Props [ramiy](https://github.com/ramiy) ([#731](https://github.com/WebDevStudios/CMB2/pull/731)).
+* Closures (anonymous functions) are now supported for any box/field `'*_cb'` parameters. E.g.
+```php
+	...
+	'show_on_cb' => function( $cmb ) { return has_tag( 'cats', $cmb->object_id ); },
+	...
+```
+
+#### Bug Fixes
+
+* If custom field types use a method and the Type object has not been instantiated, Try to guess the Type object and instantiate.
+* Normalize WordPress root path (`ABSPATH`) and theme rooth path (`get_theme_root()`). Props [@rianbotha](https://github.com/rianbotha) ([#677](https://github.com/WebDevStudios/CMB2/pull/677), [#676](https://github.com/WebDevStudios/CMB2/pull/676)).
+* Fix issue with `'cmb2_remove_row'` Javascript callback for non-group row removal. Fixes [#729](https://github.com/WebDevStudios/CMB2/pull/729)).
+* Fix issue with missing assignment of variable (undefined variable). Props [@anhskohbo](https://github.com/anhskohbo) ([#779](https://github.com/WebDevStudios/CMB2/pull/779)).
 
 ### 2.2.2.1 - 2016-06-27
 
@@ -613,6 +619,44 @@ It is now passed a null value vs saved value. If null is returned, default sanit
 * Think we have a release that is mostly working. We'll say the initial release :)
 
 == Upgrade Notice ==
+
+### 2.2.3 - 2016-10-25
+
+#### Enhancements
+
+* CMB2 REST API! CMB2 now has WP REST API endpoints for displaying your boxes and fields data, as well as registers rest fields in the existing post, user, term, and comment endpoints (in the cmb2 namespace). Enabling the REST API for your boxes/fields is opt-in, meaning it will not be automatically enabled. For more info, [check out the wiki](https://github.com/WebDevStudios/CMB2/wiki/REST-API).
+* Small string improvement, move a period inside the translatable string. Props [@pedro-mendonca](https://github.com/pedro-mendonca) ([#672](https://github.com/WebDevStudios/CMB2/pull/672)).
+* Introduce the `'save_field'` boolean field parameter for disabling the saving of a field. Useful if you want to display the value of another field, or use a disabled/read-only field. Props [@jamesgol](https://github.com/jamesgol) ([#674](https://github.com/WebDevStudios/CMB2/pull/674), [#346](https://github.com/WebDevStudios/CMB2/issues/346), [#500](https://github.com/WebDevStudios/CMB2/issues/500)).
+* Update docblocks for `CMB2_Field::save_field_from_data()` and `CMB2_Field::save_field()`. Props [@jamesgol](https://github.com/jamesgol) ([#675](https://github.com/WebDevStudios/CMB2/pull/675)).
+* More javascript events tied to the media modal actions (related to the `'file'` and '`file_list'` fields). `'cmb_media_modal_init'`, `'cmb_media_modal_open'`, and `'cmb_media_modal_select'`.
+* All CMB2 JS events now also get the CMB2 JS object passed in the list of arguments.
+* CMB2 JS object is now instantiated without stomping existing object, to enable extending.
+* New field parameter for taxonomy fields, `'remove_default'` which allows disabling the default taxonomy metabox. Props [@c3mdigital](https://github.com/c3mdigital) ([#593](https://github.com/WebDevStudios/CMB2/pull/593)).
+* Change `'row_classes'` to just `'classes'`, to mirror the metabox `'classes'` property. Also now accepts a `'classes_cb'` parameter for specifying a callback which returns a string or array. The callback will receive `$field_args` as the first argument, and the CMB2_Field `$field` object as the second argument. (`'row_classes'` will continue to work, but is deprecated)
+* Make wysiwyg editors work in the repeatable groups context. A standard repeatable (non-group) wysiwyg field is not supported (but will possibly be included in a future update). Props [@johnsonpaul1014](https://github.com/johnsonpaul1014) ([#26](https://github.com/WebDevStudios/CMB2/pull/26), [#99](https://github.com/WebDevStudios/CMB2/pull/99), [#260](https://github.com/WebDevStudios/CMB2/pull/260), [#264](https://github.com/WebDevStudios/CMB2/pull/264), [#356](https://github.com/WebDevStudios/CMB2/pull/356), [#431](https://github.com/WebDevStudios/CMB2/pull/431), [#462](https://github.com/WebDevStudios/CMB2/pull/462), [#657](https://github.com/WebDevStudios/CMB2/pull/657), [#693](https://github.com/WebDevStudios/CMB2/pull/693)).
+* Add an id to the heading tag in the title field. This allows linking to a particular title using the id.
+* Internationalization improvements. Props [ramiy](https://github.com/ramiy) ([#696](https://github.com/WebDevStudios/CMB2/pull/696)).
+* Ensure that saving does not happen during a switch-to-blog session, as data would be saved to the wrong object. [See more](https://wordpress.org/support/topic/bug-in-lastest-version?replies=2).
+* Add `'cmb2_group_wrap_attributes'` filter to modifying the group wrap div's attributes. Filter gets passed an array of attributes and expects the return to be an array. Props [jrfnl](https://github.com/jrfnl) ([#582](https://github.com/WebDevStudios/CMB2/pull/582)).
+* Update the unit-tests README and inline docs. Props [bobbingwide](https://github.com/bobbingwide) ([#714](https://github.com/WebDevStudios/CMB2/pull/714), [#715](https://github.com/WebDevStudios/CMB2/pull/715)).
+* Minor update to make naming-conventions consistent. Props [ramiy](https://github.com/ramiy) ([#718](https://github.com/WebDevStudios/CMB2/pull/718)).
+* Update files to be compatible with PHP7 CodeSniffer standards. Props [ryanshoover](https://github.com/ryanshoover) ([#719](https://github.com/WebDevStudios/CMB2/pull/719), [#720](https://github.com/WebDevStudios/CMB2/pull/720)).
+* Make exception message translatable. Props [ramiy](https://github.com/ramiy) ([#724](https://github.com/WebDevStudios/CMB2/pull/724)).
+* Portuguese translation provided by [@alvarogois](https://github.com/alvarogois) and [@pedro-mendonca](https://github.com/pedro-mendonca) - [#709](https://github.com/WebDevStudios/CMB2/pull/709), [#727](https://github.com/WebDevStudios/CMB2/pull/727).
+* Stop using `$wp_version` global Props [ramiy](https://github.com/ramiy) ([#731](https://github.com/WebDevStudios/CMB2/pull/731)).
+* Closures (anonymous functions) are now supported for any box/field `'*_cb'` parameters. E.g.
+```php
+	...
+	'show_on_cb' => function( $cmb ) { return has_tag( 'cats', $cmb->object_id ); },
+	...
+```
+
+#### Bug Fixes
+
+* If custom field types use a method and the Type object has not been instantiated, Try to guess the Type object and instantiate.
+* Normalize WordPress root path (`ABSPATH`) and theme rooth path (`get_theme_root()`). Props [@rianbotha](https://github.com/rianbotha) ([#677](https://github.com/WebDevStudios/CMB2/pull/677), [#676](https://github.com/WebDevStudios/CMB2/pull/676)).
+* Fix issue with `'cmb2_remove_row'` Javascript callback for non-group row removal. Fixes [#729](https://github.com/WebDevStudios/CMB2/pull/729)).
+* Fix issue with missing assignment of variable (undefined variable). Props [@anhskohbo](https://github.com/anhskohbo) ([#779](https://github.com/WebDevStudios/CMB2/pull/779)).
 
 ### 2.2.2.1 - 2016-06-27
 
