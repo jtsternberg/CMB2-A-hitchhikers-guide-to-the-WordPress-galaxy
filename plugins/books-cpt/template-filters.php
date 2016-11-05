@@ -106,3 +106,23 @@ function bookscpt_maybe_filter_next_post_link( $html ) {
 	return $html;
 }
 add_filter( 'next_post_link', 'bookscpt_maybe_filter_next_post_link' );
+
+/**
+ * Add some css to the head to set the genre image as a backgroun image.
+ */
+function bookscpt_maybe_output_genre_image() {
+	if ( is_tax( 'genre' ) ) {
+		$term_id = get_queried_object_id();
+		$img = get_term_meta( $term_id, 'bookcpt_term_avatar', 1 );
+		if ( $img ) {
+			?>
+			<style>
+				#primary {
+					background: url( '<?php echo esc_url( $img ); ?>' ) no-repeat top right;
+				}
+			</style>
+			<?php
+		}
+	}
+}
+add_action( 'wp_head', 'bookscpt_maybe_output_genre_image' );
