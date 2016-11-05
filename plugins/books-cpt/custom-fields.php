@@ -31,6 +31,7 @@ function bookcpt_register_demo_metabox() {
 		'id'       => $prefix . 'genres',
 		'type'     => 'taxonomy_multicheck',
 		'taxonomy' => 'genre', // Taxonomy Slug
+		'remove_default' => true,
 	) );
 
 	$cmb->add_field( array(
@@ -68,3 +69,26 @@ function bookcpt_register_demo_metabox() {
 
 }
 add_action( 'cmb2_init', 'bookcpt_register_demo_metabox' );
+
+function bookcpt_register_taxonomy_metabox() {
+	$prefix = 'bookcpt_term_';
+
+	/**
+	 * Metabox to add fields to categories and tags
+	 */
+	$cmb_term = new_cmb2_box( array(
+		'id'               => $prefix . 'edit',
+		'object_types'     => array( 'term' ), // Tells CMB2 to use term_meta vs post_meta
+		'taxonomies'       => array( 'genre' ), // Tells CMB2 which taxonomies should have these fields
+		// 'new_term_section' => true, // Will display in the "Add New Category" section
+	) );
+
+	$cmb_term->add_field( array(
+		'name' => esc_html__( 'Genre Image', 'cmb2' ),
+		'desc' => esc_html__( 'field description (optional)', 'cmb2' ),
+		'id'   => $prefix . 'avatar',
+		'type' => 'file',
+	) );
+
+}
+add_action( 'cmb2_admin_init', 'bookcpt_register_taxonomy_metabox' );
